@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Valentina Rossi | Perfil Oficial</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
   <style>
     :root{
       --blue:#1da1f2;      /* azul tipo Twitter */
@@ -26,11 +27,10 @@
       color:#fff;
     }
 
-    /* ligero overlay para mejorar contraste sin ocultar la foto */
     .backdrop {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.45));
+      background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.45));
       pointer-events: none;
       z-index: 0;
     }
@@ -60,7 +60,6 @@
       justify-content:center;
     }
 
-    /* perfil circular */
     .avatar-wrap{
       position: relative;
       width: 108px;
@@ -79,7 +78,6 @@
       border: 3px solid rgba(255,255,255,0.08);
     }
 
-    /* verificado estilo Twitter: círculo azul con check blanco */
     .verified {
       position: absolute;
       right: -6px;
@@ -164,14 +162,12 @@
       border: 1px solid rgba(255,255,255,0.04);
     }
 
-    /* responsive adjustments */
     @media (max-width:520px){
       .top { flex-direction:column; gap:12px; }
       .meta { text-align:center; }
       .name { justify-content:center; }
     }
 
-    /* small accessibility focus */
     .btn:focus, .secondary:focus { outline: 3px solid rgba(29,161,242,0.18); outline-offset:3px; }
   </style>
 </head>
@@ -181,10 +177,8 @@
   <main class="card" role="main" aria-labelledby="profile-name">
     <div class="top">
       <div class="avatar-wrap" aria-hidden="true">
-        <!-- usando la misma foto como avatar; cambia el src si prefieres otra -->
-        <img class="avatar" src="portada 2.jpg" alt="Retrato de Valentina Rossi (foto de perfil)">
+        <img class="avatar" src="portada 2.jpg" alt="Foto de perfil de Valentina Rossi">
         <span class="verified" aria-label="Cuenta verificada">
-          <!-- ícono check (SVG) -->
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M20.285 6.708a1 1 0 0 0-1.57-1.24l-8.574 10.86-3.43-3.43a1 1 0 0 0-1.414 1.414l4.137 4.137a1 1 0 0 0 1.414 0l9.437-11.741z"></path>
           </svg>
@@ -199,14 +193,14 @@
 
     <div class="bio">
       <span class="highlight">Modelo digital & creadora premium.</span><br>
-      Fusiono elegancia, arte y estilo en cada sesión. Conecta con mi mundo exclusivo y descubre contenido único pensado para suscriptores.
+      Fusiono elegancia, arte y estilo en cada sesión. Conecta con mi mundo exclusivo y descubre contenido único diseñado solo para suscriptores.
     </div>
 
     <div class="cta" role="region" aria-label="Enlaces principales">
       <a class="btn" href="https://dfans.co/valentinarossi" target="_blank" rel="noopener noreferrer">
         Ver contenido exclusivo
       </a>
-      <a class="secondary" href="#" onclick="event.preventDefault(); alert('Próximamente: más opciones');" aria-label="Información">
+      <a class="secondary" href="#" onclick="event.preventDefault(); alert('Próximamente nuevas secciones');" aria-label="Información">
         Más info
       </a>
     </div>
